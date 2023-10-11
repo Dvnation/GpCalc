@@ -359,7 +359,7 @@ useEffect(()=>{
     if (    window.screen.orientation.type !== "landscape-primary") {
     
         // setTimeout(() => { 
-            setWarn("please switch to landscape mode for better experience")
+            setWarn(" ⚠ please switch to landscape mode for better experience")
         //     // setWarn("")
         //     // setWarn("")
 
