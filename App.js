@@ -68,7 +68,7 @@ console.log("dvgbdasiusi");     }
     <Route path='about' element = {<About/>}> </Route>
     <Route path='HowTo' element= {<HowTo/>}></Route>
 
-    <Route path="*" element={<Table />} />
+    <Route path="*" element={<Table ask />} />
 
 
 </Routes>
