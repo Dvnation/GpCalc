@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Table } from './part2';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Router, Routes, HashRouter } from 'react-router-dom';
 import { Home } from './Components/Home';
 import { About } from './Components/About';
 import { NavBar } from './Components/NavBar';
@@ -60,11 +60,11 @@ console.log("dvgbdasiusi");     }
         </> :
         <>
 
-        <BrowserRouter>
+        <HashRouter>
 <NavBar/>
 <Routes>
 
-<Route path='/' element = {<Table ask={ask}/>}> </Route>
+<Route path='#/' element = {<Table ask={ask}/>}> </Route>
     <Route path='about' element = {<About/>}> </Route>
     <Route path='HowTo' element= {<HowTo/>}></Route>
 
@@ -73,7 +73,7 @@ console.log("dvgbdasiusi");     }
 
 </Routes>
    
-</BrowserRouter>
+</HashRouter>
         </>
     )
 
