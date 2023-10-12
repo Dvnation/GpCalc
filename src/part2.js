@@ -358,12 +358,14 @@ useEffect(()=>{
 
     if (    window.screen.orientation.type !== "landscape-primary") {
     
-        // setTimeout(() => { 
+        setTimeout(() => { 
             setWarn(" ⚠ please switch to landscape mode for better experience")
-        //     // setWarn("")
+            setWarn("")
         //     // setWarn("")
 
-        // },750);
+        },700);
+        setWarn("")
+
 
 }
 
@@ -373,7 +375,7 @@ setWarn("")}
   
 
 
-   }, 1000);
+   }, 10000);
   
   
  
